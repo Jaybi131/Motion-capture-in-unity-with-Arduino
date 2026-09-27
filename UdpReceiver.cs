@@ -20,7 +20,7 @@ public class UdpReceiver : MonoBehaviour
         receiveThread = new Thread(new ThreadStart(ReceiveData));
         receiveThread.IsBackground = true;
         receiveThread.Start();
-        Debug.Log("🟢 UDP-Receiver gestartet auf Port " + port);
+        Debug.Log("UDP-Receiver gestartet auf Port " + port);
     }
 
     void ReceiveData()
@@ -45,7 +45,7 @@ public class UdpReceiver : MonoBehaviour
             }
             catch (System.Exception e)
             {
-                Debug.LogWarning("❌ UDP Fehler: " + e.Message);
+                Debug.LogWarning("UDP Fehler: " + e.Message);
             }
         }
     }
